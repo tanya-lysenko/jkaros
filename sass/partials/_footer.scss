@@ -1,0 +1,156 @@
+#footer {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+
+  .top {
+    background-color: #3a3d40;
+    padding: 40px 0 0 0;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      overflow: hidden;
+      margin: 0 -13px 0 -13px;
+
+      @media (max-width: 899px) {
+        justify-content: center;
+      }
+
+      li {
+        display: block;
+        margin: 0 13px 40px 13px;
+        max-width: 200px;
+
+        h4 {
+          display: block;
+          color: #e3e3e3;
+          text-transform: uppercase;
+          margin: 0 0 26px 0;
+          font-family: $brand-font-1-700;
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+        .content {
+          display: block;
+          color: #bfbfbf;
+          font-family: $brand-font-2;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 22px;
+          margin: 0 0 10px 0;
+
+          a {
+            color: #86acc4;
+          }
+        }
+
+        .border {
+          padding: 0 0 20px 0;
+          margin: 0 0 10px 0;
+          background-image: url(../images/img_dots_w.png);
+          background-position: bottom;
+          background-repeat: repeat-x;
+        }
+
+        .date {
+          display: block;
+          color: #899096;
+          font-family: $brand-font-2;
+          font-weight: 400;
+          font-size: 11px;
+        }
+
+        form {
+          display: block;
+
+          fieldset {
+            display: block;
+            width: 219px;
+
+            input, textarea {
+              color: #ffffff;
+              padding: 0 10px 0 10px;
+              margin: 0 0 10px 0;
+            }
+
+            input[type=text] {
+              display: block;
+              width: 219px;
+              height: 35px;
+              line-height: 35px;
+              background-color: #282b2d;
+              border: none;
+            }
+
+            textarea {
+              display: block;
+              resize: none;
+              padding: 10px 10px 10px 10px;
+              width: 219px;
+              height: 140px;
+              background-color: #282b2d;
+              border: none;
+            }
+
+            input[type=submit] {
+              display: block;
+              margin: 0 362px 0 0;
+              width: 110px;
+              line-height: 35px;
+              border: 1px solid #2f3235;
+              background-color: #63859b;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    background-color: #2f3235;
+    overflow: hidden;
+
+    p {
+      float: left;
+      margin: 27px 0 0 0;
+      color: #afafaf;
+      font-family: $brand-font-2;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 25px;
+
+      a {
+        color: #86acc4;
+      }
+    }
+
+    ul {
+      float: right;
+      overflow: hidden;
+      margin: 27px 0 27px 0;
+
+      li {
+        float: left;
+        margin: 0 6px 0 0;
+
+        a {
+          display: block;
+          height: 25px;
+          width: 25px;
+
+          img {
+            display: block;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

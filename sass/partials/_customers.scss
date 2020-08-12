@@ -1,0 +1,33 @@
+#customers {
+  margin: 0 0 30px 0;
+
+  .title {
+    @include title;
+  }
+
+  .subtitle {
+    @include subtitle;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+      display: block;
+
+      a {
+        display: block;
+        margin-bottom: 20px;
+
+        img {
+          display: block;
+          width: 135px;
+        }
+      }
+    }
+  }
+}
